@@ -1,19 +1,10 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar.jsx'
-import Notifications from '../components/Notificationbar.jsx'
-import './styles/dashboard.css'; // Import a CSS file for styling
+import Sidebar from './Sidebar.js'
+import Notifications from './Notificationbar.js'
 
-export default function dashboard() {
+function dashboard() {
     return (
-      
         <div>
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-          />
-            <body class="h-full bg-gray-100">
-
-            <div class="flex flex-col lg:flex-row h-screen">
             <Sidebar />
             <div class="flex-1 p-6">
             <div class="flex justify-between items-center mb-6">
@@ -30,10 +21,10 @@ export default function dashboard() {
             </div>
             </div>
         </div>
-        <Notifications />
+            <Notifications />
+            <div className="dashboard">
+                <h1>Dashboard</h1>
+            </div>
         </div>
-        </body>
-        </div>
-        
     )
 }

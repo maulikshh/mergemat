@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Whiteboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 sm:px-8">
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-1/4 px-4 mb-4 lg:mb-0">
+                <!-- Sidebar -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <!-- Sidebar content -->
+                    <h2 class="text-xl font-semibold mb-4">Menu</h2>
+                    <ul class="text-gray-600">
+                        <li class="mb-2">
+                            <a href="#" class="flex items-center">
+                                <i class="fas fa-home mr-2"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="flex items-center">
+                                <i class="fas fa-chalkboard-teacher mr-2"></i>
+                                Whiteboards
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="flex items-center">
+                                <i class="fas fa-folder-open mr-2"></i>
+                                Projects
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="flex items-center">
+                                <i class="fas fa-cog mr-2"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="w-full lg:w-3/4 px-4">
+                <!-- Main content -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <div class="flex justify-between items-center mb-6">
+                        <h1 class="text-2xl sm:text-4xl font-bold text-blue-600">Virtual Whiteboard</h1>
+                        <div class="flex items-center">
+                            <i class="fas fa-search text-gray-400 mr-4 hidden sm:block"></i>
+                            <i class="far fa-bell text-gray-400"></i>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <!-- Project cards -->
+                        <div class="col-span-1 lg:col-span-2 bg-blue-100 p-4 rounded-lg">
+                            <img src="https://placehold.co/600x400" alt="Virtual whiteboard with various design sketches and notes" class="rounded-lg mb-4">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h2 class="text-lg font-semibold">Design Boards</h2>
+                                    <p class="text-sm text-gray-600">Recently viewed</p>
+                                </div>
+                                <div>
+                                    <i class="fas fa-ellipsis-h text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-200 p-4 rounded-lg flex justify-center items-center">
+                            <i class="fas fa-plus text-gray-400 text-6xl"></i>
+                        </div>
+                        <!-- More project cards -->
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-xl font-semibold mb-4">Whiteboard projects</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Project thumbnails -->
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of Store Website Low-Fid project" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">Store Website Low-Fid</h3>
+                                <p class="text-sm text-gray-600">Part of Software Development Team</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of EcoChamps project" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">EcoChamps</h3>
+                                <p class="text-sm text-gray-600">Private</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of another project" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">Project Name</h3>
+                                <p class="text-sm text-gray-600">Project Description</p>
+                            </div>
+                            <!-- More project thumbnails -->
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-xl font-semibold mb-4">Previous documents</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Document thumbnails -->
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of HealthMate document" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">HealthMate</h3>
+                                <p class="text-sm text-gray-600">As Uber works through a huge amount of internal management turmoil</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of RobotHustle document" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">RobotHustle</h3>
+                                <p class="text-sm text-gray-600">Music is something that every person has his or her own specific opinion about</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of another document" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">Document Name</h3>
+                                <p class="text-sm text-gray-600">Document Description</p>
+                            </div>
+                            <!-- More document thumbnails -->
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <h2 class="text-xl font-semibold mb-4">Previous design boards</h2>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Design board thumbnails -->
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of CodeCrafters design board" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">CodeCrafters</h3>
+                                <p class="text-sm text-gray-600">Design board description</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of AeroTechies design board" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">AeroTechies</h3>
+                                <p class="text-sm text-gray-600">Design board description</p>
+                            </div>
+                            <div class="bg-gray-100 p-4 rounded-lg">
+                                <img src="https://placehold.co/300x200" alt="Thumbnail of another design board" class="rounded-lg mb-4">
+                                <h3 class="text-md font-semibold">Design Board Name</h3>
+                                <p class="text-sm text-gray-600">Design board description</p>
+                            </div>
+                            <!-- More design board thumbnails -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

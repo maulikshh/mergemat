@@ -1,0 +1,230 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex flex-col lg:flex-row h-screen">
+      <!-- Sidebar -->
+      <div class="bg-white p-6 space-y-6 w-full lg:w-64">
+        <div class="flex items-center space-x-2">
+          <img
+            alt="MergeMat logo placeholder"
+            class="h-8 w-8"
+            src="https://placehold.co/32x32"
+          />
+          <span class="font-bold text-lg">MergeMat</span>
+        </div>
+        <div>
+          <div class="text-sm font-semibold text-gray-600">Aditya Lolip</div>
+          <div class="flex space-x-1 text-xs text-gray-500">
+            <span>Favorites</span>
+            <span>Recently</span>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="font-medium text-gray-800">Dashboards</div>
+          <div class="space-y-1">
+            <div class="flex items-center space-x-2 text-gray-600">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Dashboard</span>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-600">
+              <i class="fas fa-users"></i>
+              <span>My Groups</span>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-600">
+              <i class="fas fa-file-alt"></i>
+              <span>Personal Files</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="font-medium text-gray-800">Pages</div>
+          <div class="space-y-1">
+            <div class="flex items-center space-x-2 text-gray-600">
+              <i class="fas fa-user"></i>
+              <span>User Profile</span>
+            </div>
+            <div class="flex items-center space-x-2 text-gray-600">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Calender</span>
+            </div>
+          </div>
+        </div>
+        <div class="space-y-2">
+          <div class="flex items-center space-x-2 text-gray-600">
+            <i class="fas fa-cog"></i>
+            <span>Settings</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-600">
+            <i class="fas fa-compass"></i>
+            <span>Explore</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-600">
+            <i class="fas fa-align-left"></i>
+            <span>Content</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-600">
+            <i class="fas fa-envelope"></i>
+            <span>Messages</span>
+          </div>
+          <div class="flex items-center space-x-2 text-gray-600">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+          </div>
+        </div>
+      </div>
+      <!-- Main content -->
+      <div class="flex-1 p-6">
+        <div class="flex justify-between items-center mb-6">
+          <div class="flex space-x-2 items-center">
+            <i class="fas fa-bars text-gray-600"></i>
+            <span class="font-semibold text-lg">Dashboard</span>
+          </div>
+          <div class="flex space-x-4 items-center">
+            <i class="fas fa-search text-gray-600"></i>
+            <i class="fas fa-bell text-gray-600"></i>
+            <i class="fas fa-user-circle text-gray-600"></i>
+            <i class="fas fa-th text-gray-600"></i>
+            <i class="fas fa-envelope text-gray-600"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Right Sidebar -->
+      <div class="bg-white p-6 space-y-6 w-full lg:w-64">
+        <div class="font-semibold text-lg mb-4">Notifications</div>
+        <div class="space-y-4">
+          <!-- Notifications -->
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-check-circle text-green-500"></i>
+            <div>
+              <div>You fixed a bug.</div>
+              <div class="text-xs text-gray-500">Just now</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-user-plus text-blue-500"></i>
+            <div>
+              <div>New user registered.</div>
+              <div class="text-xs text-gray-500">59 minutes ago</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-check-circle text-green-500"></i>
+            <div>
+              <div>You fixed a bug.</div>
+              <div class="text-xs text-gray-500">12 hours ago</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-user-friends text-purple-500"></i>
+            <div>
+              <div>Andi Lane subscribed to you.</div>
+              <div class="text-xs text-gray-500">Today, 11:59 AM</div>
+            </div>
+          </div>
+          <!-- Activities -->
+          <div class="font-semibold text-lg mb-4">Activities</div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-paint-brush text-red-500"></i>
+            <div>
+              <div>Changed the style.</div>
+              <div class="text-xs text-gray-500">Just now</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-upload text-blue-500"></i>
+            <div>
+              <div>Released a new version.</div>
+              <div class="text-xs text-gray-500">59 minutes ago</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-bug text-orange-500"></i>
+            <div>
+              <div>Submitted a bug.</div>
+              <div class="text-xs text-gray-500">12 hours ago</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-edit text-purple-500"></i>
+            <div>
+              <div>Modified a data in Page X.</div>
+              <div class="text-xs text-gray-500">Today, 11:59 AM</div>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <i class="fas fa-trash-alt text-red-500"></i>
+            <div>
+              <div>Deleted a page in Project X.</div>
+              <div class="text-xs text-gray-500">Feb 2, 2023</div>
+            </div>
+          </div>
+          <!-- Recent Chats -->
+          <div class="font-semibold text-lg mb-4">Recent Chats</div>
+          <div class="flex items-center space-x-2 text-sm">
+            <img
+              alt="Natali Craig profile image placeholder"
+              class="h-8 w-8 rounded-full"
+              src="https://placehold.co/32x32"
+            />
+            <span>Natali Craig</span>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <img
+              alt="Drew Cano profile image placeholder"
+              class="h-8 w-8 rounded-full"
+              src="https://placehold.co/32x32"
+            />
+            <span>Drew Cano</span>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <img
+              alt="Andi Lane profile image placeholder"
+              class="h-8 w-8 rounded-full"
+              src="https://placehold.co/32x32"
+            />
+            <span>Andi Lane</span>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <img
+              alt="Koray Okumus profile image placeholder"
+              class="h-8 w-8 rounded-full"
+              src="https://placehold.co/32x32"
+            />
+            <span>Koray Okumus</span>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <img
+              alt="Kate Morrison profile image placeholder"
+              class="h-8 w-8 rounded-full"
+              src="https://placehold.co/32x32"
+            />
+            <span>Kate Morrison</span>
+          </div>
+          <div class="flex items-center space-x-2 text-sm">
+            <img
+              alt="Melody Macy profile image placeholder"
+              class="h-8 w-8 rounded-full"
+              src="https://placehold.co/32x32"
+            />
+            <span>Melody Macy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

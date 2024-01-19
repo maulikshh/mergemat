@@ -1,0 +1,16 @@
+/* dashboard.css */
+body,
+html,
+#root,
+.dashboard-container {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.bg-gray-100 {
+  background-color: #f3f4f6; /* Set your desired background color */
+}
