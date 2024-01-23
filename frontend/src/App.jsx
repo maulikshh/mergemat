@@ -11,6 +11,7 @@ import {Toaster} from 'react-hot-toast'
 import { UserContextprovider } from '../context/usercontext';
 import Dashboard from './pages/Dashboard'
 import Content from './pages/content'
+import Group from './pages/Group'
 
 axios.defaults.baseURL= 'http://localhost:3000';
 axios.defaults.withCredentials= true;
@@ -28,6 +29,7 @@ function App() {
         <Route path='/register' element={<Register />} />
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/content' element={<Content />} />
+        <Route path='/group' element={<Group />} />
       </Routes>
     </UserContextprovider>
   )
