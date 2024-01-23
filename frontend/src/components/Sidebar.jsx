@@ -28,10 +28,10 @@ export default function Sidebar() {
                 <i class="fas fa-tachometer-alt"></i>
                 <span>Dashboard</span>
                 </div>
-                <div class="flex items-center space-x-2 text-gray-800">
-                <i class="fas fa-users"></i>
-                <span>My Groups</span>
-                </div>
+                <a href="/group" className="flex items-center space-x-2 text-gray-800">
+            <i className="fas fa-users"></i>
+            <span>My Groups</span>
+          </a>
                 <div class="flex items-center space-x-2 text-gray-800">
                 <i class="fas fa-file-alt"></i>
                 <span>Personal Files</span>
@@ -60,10 +60,10 @@ export default function Sidebar() {
                 <i class="fas fa-compass"></i>
                 <span>Explore</span>
             </div>
-            <div class="flex items-center space-x-2 text-gray-800">
-                <i class="fas fa-align-left"></i>
-                <span>Content</span>
-            </div>
+            <a href="/content" className="flex items-center space-x-2 text-gray-800">
+          <i className="fas fa-align-left"></i>
+          <span>Content</span>
+        </a>
             <div class="flex items-center space-x-2 text-gray-800">
                 <i class="fas fa-envelope"></i>
                 <span>Messages</span>
