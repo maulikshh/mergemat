@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar.jsx';
 import './styles/conten.css';
+import CanvasDraw from "react-canvas-draw";
 
 const Content = () => {
   return (
@@ -97,7 +98,21 @@ const Content = () => {
 
             {/* Whiteboard */}
             <div className="whiteboard p-4">
-              {/* Content can be added here */}
+                <CanvasDraw
+                    className="whiteboard"
+                    brushColor="#000000"
+                    brushRadius={2}
+                    lazyRadius={0}
+                    canvasWidth={1000}
+                    canvasHeight={500}
+                    hideGrid={true} // This prop might not exist; it's illustrative
+                    style={{
+                        background: 'radial-gradient(circle, #000 1px, rgba(255, 255, 255, 0) 1px)',
+                        backgroundSize: '28px 28px',
+                        border: '1px solid #E5E7EB',
+                        borderRadius: '8px',
+                    }}
+                />
             </div>
           </div>
         </div>
