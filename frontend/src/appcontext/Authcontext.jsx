@@ -1,7 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { auth, db } from '../src/config/firebase'
-
-
+import { auth, db } from '../config/firebase'
+import { collection, addDoc, doc, setDoc } from 'firebase/firestore'
 
 
 const AuthContext = React.createContext()
@@ -14,8 +13,31 @@ export function AuthProvider({ children }) {
     const [currentUser, setCurrentUser] = useState()
     const [loading, setLoading] = useState(true)
 
+    // async function signup(firstName, lastName, email, password,) {
+    //     try {
+    //         const userCredential = await auth.createUserWithEmailAndPassword(email, password);
+    //         const { user } = userCredential
+
+    //         // Add user details to Firestore
+    //         const ref = doc(db, "users",)
+    //         const docRef = await addDoc(collection(db, "users"), {
+    //             firstName: firstName,
+    //             lastName: lastName,
+    //             email: email
+    //         })
+    //         console.log("Document written with ID:", docRef.id)
+    //         // You can return additional information if needed
+    //         return user;
+
+    //     } catch (e) {
+    //         // Handle errors here
+    //         console.error("Error during signup:", e);
+
+    //     }
+    // }
+
     function signup(email, password) {
-        return console.log("");
+        return auth.createUserWithEmailAndPassword(email, password)
     }
 
 

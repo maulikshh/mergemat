@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from '../components/Sidebar.jsx'
 import Notifications from '../components/Notificationbar.jsx'
 import './styles/dashboard.css'; // Import a CSS file for styling
+import { useAuth } from '../../context/usercontext'
 
 export default function dashboard() {
     return (
@@ -19,7 +20,7 @@ export default function dashboard() {
             <div class="flex justify-between items-center mb-6">
             <div class="flex space-x-2 items-center">
                 <i class="fas fa-bars text-gray-600"></i>
-                <span class="font-semibold text-lg">Dashboard</span>
+                <span class="font-semibold text-lg">Dashboard for!</span>
             </div>
             <div class="flex space-x-4 items-center">
                 <i class="fas fa-search text-gray-600"></i>

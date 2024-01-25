@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar from '../components/Sidebar.jsx';
-import './styles/conten.css';
+import './styles/content.css';
 import CanvasDraw from "react-canvas-draw";
 
 const Content = () => {
